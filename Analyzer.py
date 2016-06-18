@@ -156,4 +156,4 @@ class Analyzer():
 
     def __del__(self):
         print "---- Deleting folder ----"
-        shutil.rmtree('/home/support/Desktop/TEST123')
+        shutil.rmtree('/home/support/Desktop/RACE-'+str(raceNo))
