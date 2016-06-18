@@ -14,7 +14,7 @@ import SvcObj
 '''REGEX'''
 RACE_VERS_REGEX ='\w{7}\s[v]\d\.\d\.'
 TIME_STAMP_REGEX = '[\b\w{3}\b\s\w{3}\s\d{2}\s\d{2}\:\d{2}\:\d{2}\s\d{4}]'
-DIGIT_REGEX = '[\b\w{1,3}\b\s\w{1,3}\b\s\s[0-9]\b]' #\s\d\d\:\d\d\:\d\d\s\d\d\d\d'
+DIGIT_REGEX = '[\b\w{1,3}\b\s\w{1,3}\b\s\s[0-9]\b]' 
 SVC_START_LINE = 'svcinfo lseventlog'
 SVC_END_LINE = 'svcinfo lssystem -delim'
 SVC_ERRORS = '\s1862\s|\s2030\s'
@@ -22,32 +22,24 @@ SVC_ERRORS = '\s1862\s|\s2030\s'
 
 FILES_DATE_PATTERN = "%a %b %d %H:%M:%S %Y"
 MY_DATE_PATTERN = "%Y%m%d%H%M%S"
-
-
-REDUCED_LINES = 500 #TODO: decide how many lines to reduce
+REDUCED_LINES = 500 
 EOF = "\0"
 LOCAL_DIR_PATH = '/home/support/Desktop/RACE-'
-
 LOG_FILE = '*.log'
 COUNTERS_FILE = '*.counters'
 SEQ_FILE = '*.seq.txt'
 SVC_FILE = 'svcout.*'
 
 
-
-tmpTIME = 'Wed May  4 20:12:\d 2016' #TODO: build regex!!!!!!!!!!!!!!!!!!
-
-################################TODO: finish details
-# This class handle all the file operations including extracting information
-# works with regex in order to find relevant information
-################################
+'''
+This class handle all the file operations including extracting information
+works with regex in order to find relevant information and parsing data
+'''
 
 
 class FilesOps():
 
     def __init__(self, race_num, timeGiven):
-
-
 
 
         self.localDirPath = LOCAL_DIR_PATH + str(race_num)
@@ -251,9 +243,9 @@ class FilesOps():
 
         return
 
-
-
-
+    ############################
+    # Find SVC relevant errors #
+    ############################
     def find_SVC_errors(self):
 
         SVCFile = self.__find_files(SVC_FILE, self.localDirPath)
