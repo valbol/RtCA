@@ -13,7 +13,9 @@ HOST = ''   # AKA - MegaStore
 USER_NAME = ''
 PASS = ''
 
-
+"""This class is in charged on the connection to 
+ the server and needed operations """
+ 
 class ClientOps:
 
     def __init__(self, race_num):
