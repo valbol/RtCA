@@ -4,6 +4,9 @@
 # RTCS - Made by Valery Boltavsky  #
 ####################################
 
+''' 
+This class represent the cocument inside the collection
+'''
 class MongoObj():
 
     def __init__(self):
