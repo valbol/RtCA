@@ -4,6 +4,9 @@
 # RTCS - Made by Valery Boltavsky  #
 ####################################
 
+"""
+This class represent SVC object
+"""
 class SvcObj():
 
     def __init__(self):
