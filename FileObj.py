@@ -4,6 +4,10 @@
 # RTCS - Made by Valery Boltavsky  #
 ####################################
 
+
+'''
+This class represent file object
+'''
 class FileObj():
 
     def __init__(self):
