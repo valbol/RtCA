@@ -9,6 +9,7 @@
 $command = escapeshellcmd('/home/support/PycharmProjects/AnalyzerRTC/main.py');
 
 $output = shell_exec($command);
+//Print the output in readble view
 echo nl2br(htmlspecialchars($output));
 
 
