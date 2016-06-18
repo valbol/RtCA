@@ -28,7 +28,7 @@ if (filter_var($raceNo, FILTER_VALIDATE_INT, $race) == FALSE ){
 
 //If timestamp Input wrong retuurn to home-page
 if (preg_match ("/^\d{1,2}\s\d{1,2}\s\d{4}\s\d{2}\:\d{2}\:\d{2}", $ts) == FALSE){
-	#echo "Input not valid! ";
+	echo "Input not valid! ";
 
 }
 
