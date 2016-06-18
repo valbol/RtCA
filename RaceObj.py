@@ -3,7 +3,9 @@
 ####################################
 # RTCS - Made by Valery Boltavsky  #
 ####################################
-
+""" 
+This class build the race object
+"""
 class RaceObj():
 
     def __init__(self):
