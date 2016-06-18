@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="AnalyzerCSS.css">
+</head>
+
+<body>
+
+
+<h1>RtC Scanner<br/></h1>
+
+<h3>Welcome to RtC Scanner,<br/> Web-app which finds the root cause of a given issue<br/></h3>
+<p>Insert information in the format as shown in the example below.<br/>
+Time stamp format:<strong> d m yyyy HH:MM:SS </strong><br/></p>
+
+<h3>Please enter RACE No. and issue timestamp</h3>
+<div id="message"></div>
+<form action="analyze.php" method="post" onsubmit="return validate()">
+<strong>Race No:<br/><strong> <input type="text" id="RaceNo" name="RaceNo" placeholder="e.g. 5190"><br/>
+<strong>Issue Timestamp:<br/><strong> <input type="date" id="timeStamp" name="timestamp" placeholder="e.g. 17 3 2016 20:44:49"><br/><br/>
+
+<button type="submit" value="Submit" class="button button2">Analyze!</button>
+</form>
+<br/><br/><br/>
+<p>In order to get statistics press:
+</p>
+<input type="button" value="Statistics" onclick="openStats()" class="button button2" />
+
+
+<script>
+	
+	function openStats() {
+		window.location.assign("stats.php");		
+	}
+
+	function validate() {
+
+		var raceNo =  document.getElementById("RaceNo").value;
+		var timeStamp =  document.getElementById("timeStamp").value;
+
+
+		var messageBox =  document.getElementById("message");
+
+		if (raceNo < 999 || raceNo > 9999) {
+			messageBox.innerHTML = 'Please enter valid race no';
+			return false;
+		}
+		// TODO: check date format
+
+		return true;
+	}
+</script>
+
+</body>
+
+
+</html>

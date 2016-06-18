@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+    
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+h3 {
+    color:0033FF;
+    margin-left: 20px;
+
+}
+p {
+    margin-left: 20px;
+
+}
+form {
+    margin-left: 20px;
+   
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
