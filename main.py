@@ -29,15 +29,6 @@ def main():
     ######################################################################
     monthDic = {1:'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'}
 
-    ##############################################
-    # Wed May  4 20:12:39 2016
-
-    # raceNo =5923
-    # weekday="\w{3}"
-    # month = "May"
-    # day = "4"
-    # tm = "20:12:\d{2}"
-    # year = "2016"
 
     print "userID is =", getpass.getuser()
     args = len(sys.argv) # Arguments count
