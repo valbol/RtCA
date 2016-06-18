@@ -13,6 +13,13 @@ MAYHAVE_ASSERT = "MAYHAVE_ASSERT"
 MAIN_ASSERT = "MAIN_ASSERT"
 LOG = "log"
 
+
+'''
+This class is handle all the operations 
+related to MongoDB
+Pulling of APARs anc collecting new documents and statistics
+'''
+
 class MongoDB:
 
     def __init__(self):
