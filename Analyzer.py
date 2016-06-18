@@ -19,7 +19,7 @@ MY_DATE_PATTERN = "%Y%m%d%H%M%S"
 LOCAL_DIR_PATH = '/home/support/Desktop/RACE-'
 
 """ Analyzer Class is the main class of the project,
-    This class is initiate all the Modules in this system """
+    This class initiates all the Modules in this system """
 class Analyzer():
 
     def __init__(self, raceNo, eventTimeStamp):
