@@ -9,9 +9,9 @@ from scp import SCPClient
 
 
 HOST_PATH = '/mnt/bugs/RACE-'
-HOST = '9.151.189.30'   # AKA - MegaStore
-USER_NAME = 'root'
-PASS = 'a1b2c3'
+HOST = ''   # AKA - MegaStore
+USER_NAME = ''
+PASS = ''
 
 
 class ClientOps:
